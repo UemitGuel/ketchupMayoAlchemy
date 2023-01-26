@@ -1,7 +1,9 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity 0.8.17;
 
-contract Ketchup {
+import "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol";
+
+contract Ketchup is Initializable {
     uint public ketchupCount;
     uint public mayoCount;
     Topping[] public toppings;

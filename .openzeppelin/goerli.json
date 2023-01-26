@@ -1,0 +1,118 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0xACe46A55cC6803311fEb7fe161e9653233bDdc1B",
+    "txHash": "0x6a5359c8c26939533a50835f633e086ff95176276ab664ee9b39a678c4cb5ec2"
+  },
+  "proxies": [
+    {
+      "address": "0xEbB7f67f612d92Ddc27489ccC3387328D4F4a17a",
+      "txHash": "0xfba1d779616fdce2f344cd7d060e06331bf212398617b3f3a3c39e38ed3da238",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "24a945ef0221c21dace45256376c079540ea7b9fbf18a69608f4e4257dace00b": {
+      "address": "0x1CC16D6DFa0bE5C76164f81245B324e8d0Ed2516",
+      "txHash": "0x6bd91e1dc13dd629b03664535cd558d3ecd21a724daf427e6deada3e00937084",
+      "layout": {
+        "solcVersion": "0.8.17",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:67"
+          },
+          {
+            "label": "ketchupCount",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_uint256",
+            "contract": "Ketchup",
+            "src": "contracts/Ketchup.sol:7"
+          },
+          {
+            "label": "mayoCount",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_uint256",
+            "contract": "Ketchup",
+            "src": "contracts/Ketchup.sol:8"
+          },
+          {
+            "label": "toppings",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_array(t_struct(Topping)476_storage)dyn_storage",
+            "contract": "Ketchup",
+            "src": "contracts/Ketchup.sol:9"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_struct(Topping)476_storage)dyn_storage": {
+            "label": "struct Ketchup.Topping[]",
+            "numberOfBytes": "32"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_struct(Topping)476_storage": {
+            "label": "struct Ketchup.Topping",
+            "members": [
+              {
+                "label": "voter",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "timestamp",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "ketchupCount",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "mayoCount",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "3"
+              }
+            ],
+            "numberOfBytes": "128"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    }
+  }
+}
