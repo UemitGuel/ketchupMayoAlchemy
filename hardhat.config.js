@@ -5,17 +5,16 @@ require("dotenv").config();
 
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
-  defaultNetwork: "goerli",
   solidity: "0.8.17",
   networks: {
     goerli: {
-      url: process.env.RPC_URL,
-      accounts: [process.env.PRIVATEKEY]
+      url: process.env.ALCHEMY_GOERLI_URL,
+      accounts: [process.env.GOERLI_PRIVATE_KEY]
     }
   },
   etherscan: {
     apiKey: {
-      goerli: process.env.ETHERSCAN_API
+      goerli: process.env.ETHERSCAN_KEY
     }
   }
 };
